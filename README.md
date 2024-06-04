@@ -1,5 +1,7 @@
 # Modern Design App
 
+![127 0 0 1_5500_modern-design_index html](https://github.com/HAWKZ4/modern-design/assets/108879264/0cb68e49-8aeb-4b49-aea3-89e06b8c8ecf)
+
 Welcome to the Modern Design App project! This is a front-end-only application built using HTML, CSS, and JavaScript.
 The purpose of this project is to showcase a modern design with various interactive elements and sections.
 
