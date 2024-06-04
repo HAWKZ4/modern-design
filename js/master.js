@@ -57,10 +57,7 @@ const colorsLi = document.querySelectorAll(".color-list li");
 colorsLi.forEach((li) => {
   // add click event
   li.addEventListener("click", (e) => {
-    document.documentElement.style.setProperty(
-      "--main-color",
-      e.target.dataset.color
-    );
+    document.documentElement.style.setProperty("--main-color", e.target.dataset.color);
 
     // Set color_option in local storage
     localStorage.setItem("color_option", e.target.dataset.color);
@@ -99,13 +96,7 @@ randomBackEl.forEach((span) => {
 landingPage = document.querySelector(".landing-page");
 
 // Array of imgs
-const imgsArray = [
-  "image1.jpg",
-  "image2.jpg",
-  "image3.jpg",
-  "image4.jpg",
-  "image5.jpg",
-];
+const imgsArray = ["image1.jpg", "image2.jpg", "image3.jpg", "image4.jpg", "image5.jpg"];
 
 // Function to randomize imgs
 function radnomizeImgs() {
@@ -115,8 +106,7 @@ function radnomizeImgs() {
       let randomNumber = Math.floor(Math.random() * imgsArray.length);
 
       // Change background image url
-      landingPage.style.backgroundImage =
-        'url("../imgs/' + imgsArray[randomNumber] + '")';
+      landingPage.style.backgroundImage = 'url("imgs/' + imgsArray[randomNumber] + '")';
       // url in js want '' in the first to begin
     }, 1000);
   }
@@ -140,9 +130,7 @@ window.onscroll = function () {
   let windowScrollTop = this.pageYOffset;
 
   if (windowScrollTop >= skillsOffsetTop + skillsOffsetHeight - windowHeight) {
-    let allSkills = document.querySelectorAll(
-      ".skill-box .skill-progress span"
-    );
+    let allSkills = document.querySelectorAll(".skill-box .skill-progress span");
 
     allSkills.forEach((skill) => {
       skill.style.width = skill.dataset.progress;
@@ -214,10 +202,7 @@ imagesInGallery.forEach((img) => {
 });
 
 document.addEventListener("click", (e) => {
-  if (
-    e.target.classList.contains("close-button") ||
-    e.target.classList.contains("popup-overlay")
-  ) {
+  if (e.target.classList.contains("close-button") || e.target.classList.contains("popup-overlay")) {
     // One popup if you like
     // e.target.parentElement.remove()
 
